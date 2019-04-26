@@ -1,0 +1,26 @@
+dubbo:
+  application:
+    name: hero-dubbo-consumer
+  registry:
+    address: 127.0.0.1:2181
+    # 读者请自行更改zookeeper地址
+    protocol: zookeeper
+    check: false
+  monitor:
+    protocol: register
+  consumer:
+    check:  false
+    timeout: 3000
+
+server:
+  port: 8088
+#  servlet:
+#    context-path: /hero-consumer
+
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  output:
+    ansi:
+      enabled: always
