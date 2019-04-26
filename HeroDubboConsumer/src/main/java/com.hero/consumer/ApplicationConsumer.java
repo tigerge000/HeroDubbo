@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @EnableDubbo //启动dubbo注解，自动导入application.yml配置
-@ImportResource(locations = "classpath:spring/hero-dubbo-consumer.xml")// 导入provider配置
+@ImportResource(locations = "classpath:spring/hero-dubbo-consumer.xml")// 导入consumer配置
 public class ApplicationConsumer {
     public static void main(String[] args){
         SpringApplication.run(ApplicationConsumer.class, args);
